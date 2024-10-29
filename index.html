@@ -16,6 +16,20 @@
         .no-print {
           display: none;
         }
+
+        button {
+          display: none;
+        }
+      }
+
+      button {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        padding: 10px;
+        color: #fff;
+        background-color: red;
+        border-radius: 5px;
       }
 
       body {
@@ -127,6 +141,8 @@
   </head>
 
   <body>
+    <button onclick="printPage()">Print</button>
+
     <div class="container">
       <!-- Sidebar -->
       <div class="sidebar">
@@ -201,9 +217,7 @@
         <section class="section skills">
           <h2>Hard Skills</h2>
           <ul>
-            <li>
-              <b>Front-End:</b> C, C+, C-, C++, C--, C//, C##, C@
-            </li>
+            <li><b>Front-End:</b> C, C+, C-, C++, C--, C//, C##, C@</li>
             <li><b>Back-End:</b> COBOL, BASIC</li>
           </ul>
         </section>
@@ -234,9 +248,10 @@
       <div class="content">
         <section class="section">
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-            dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-            book.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus
+            rutrum sem. Cras dapibus mauris vitae est aliquam, id euismod magna
+            condimentum. Vivamus dolor nisl, fringilla ut tellus at, ornare
+            pellentesque odio.
           </p>
         </section>
 
@@ -249,19 +264,24 @@
             </p>
             <ul>
               <li>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae commodo augue.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                vitae commodo augue.
               </li>
               <li>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae commodo augue.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                vitae commodo augue.
               </li>
               <li>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae commodo augue.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                vitae commodo augue.
               </li>
               <li>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae commodo augue.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                vitae commodo augue.
               </li>
               <li>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae commodo augue.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                vitae commodo augue.
               </li>
             </ul>
           </div>
@@ -272,14 +292,20 @@
             </p>
             <ul>
               <li>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae commodo augue.
-              </li>
-              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae commodo augue.</li>
-              <li>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae commodo augue.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                vitae commodo augue.
               </li>
               <li>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae commodo augue.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                vitae commodo augue.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                vitae commodo augue.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                vitae commodo augue.
               </li>
             </ul>
           </div>
@@ -291,9 +317,7 @@
             University of Bologna
             <span class="date">Sep, 1180 - Jul, 1183</span>
           </p>
-          <p>
-            LLB Law
-          </p>
+          <p>LLB Law</p>
         </section>
 
         <section class="section">
@@ -317,5 +341,11 @@
         </section>
       </div>
     </div>
+
+    <script>
+      function printPage() {
+        window.print();
+      }
+    </script>
   </body>
 </html>
